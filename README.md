@@ -8,6 +8,12 @@ This project demonstrates the use of basic RAG flow with LLM.
 - Build prompt template using raw user query and extracted knowledge (as base).
 - Cater response.
 
+
+<div align="center">
+<img src="./docs/architecture.png">
+</div>
+
+
 ## How to run
 
 1. Install requirements.
