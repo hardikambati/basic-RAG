@@ -1,6 +1,7 @@
 import os
 
 import requests
+from dotenv import load_dotenv
 from sklearn.metrics.pairwise import cosine_similarity
 
 import chromadb
@@ -8,9 +9,9 @@ from google import genai
 from langchain.document_loaders import WebBaseLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 
-
-API_KEY = os.environ.get("API_KEY")
-HUGGING_FACE_TOKEN = os.environ.get("HUGGING_FACE_TOKEN")
+load_dotenv()
+API_KEY = os.getenv("API_KEY")
+HUGGING_FACE_TOKEN = os.getenv("HUGGING_FACE_TOKEN")
 
 
 class GenUtility:
